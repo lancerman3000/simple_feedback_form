@@ -1,3 +1,34 @@
 AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.19.0.4. Set the 'ServerName' directive globally to suppress this message
 [Wed Jun 08 18:20:17.392786 2022] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.53 (Debian) PHP/7.4.29 configured -- resuming normal operations
 [Wed Jun 08 18:20:17.393959 2022] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+[Wed Jun 08 18:34:42.883951 2022] [php7:warn] [pid 21] [client 172.19.0.1:65112] PHP Warning:  require(html/_header.html): failed to open stream: No such file or directory in /var/www/html/index.php on line 2
+[Wed Jun 08 18:34:42.885317 2022] [php7:error] [pid 21] [client 172.19.0.1:65112] PHP Fatal error:  require(): Failed opening required 'html/_header.html' (include_path='.:/usr/local/lib/php') in /var/www/html/index.php on line 2
+[Wed Jun 08 18:34:43.518724 2022] [php7:warn] [pid 21] [client 172.19.0.1:65112] PHP Warning:  require(html/_header.html): failed to open stream: No such file or directory in /var/www/html/index.php on line 2
+[Wed Jun 08 18:34:43.519349 2022] [php7:error] [pid 21] [client 172.19.0.1:65112] PHP Fatal error:  require(): Failed opening required 'html/_header.html' (include_path='.:/usr/local/lib/php') in /var/www/html/index.php on line 2
+[Wed Jun 08 18:34:44.087257 2022] [php7:warn] [pid 21] [client 172.19.0.1:65112] PHP Warning:  require(html/_header.html): failed to open stream: No such file or directory in /var/www/html/index.php on line 2
+[Wed Jun 08 18:34:44.088070 2022] [php7:error] [pid 21] [client 172.19.0.1:65112] PHP Fatal error:  require(): Failed opening required 'html/_header.html' (include_path='.:/usr/local/lib/php') in /var/www/html/index.php on line 2
+[Wed Jun 08 18:35:03.087619 2022] [php7:warn] [pid 19] [client 172.19.0.1:65114] PHP Warning:  require(./html/_header.html): failed to open stream: No such file or directory in /var/www/html/index.php on line 2
+[Wed Jun 08 18:35:03.089875 2022] [php7:error] [pid 19] [client 172.19.0.1:65114] PHP Fatal error:  require(): Failed opening required './html/_header.html' (include_path='.:/usr/local/lib/php') in /var/www/html/index.php on line 2
+[Wed Jun 08 18:35:03.514632 2022] [php7:warn] [pid 19] [client 172.19.0.1:65114] PHP Warning:  require(./html/_header.html): failed to open stream: No such file or directory in /var/www/html/index.php on line 2
+[Wed Jun 08 18:35:03.515619 2022] [php7:error] [pid 19] [client 172.19.0.1:65114] PHP Fatal error:  require(): Failed opening required './html/_header.html' (include_path='.:/usr/local/lib/php') in /var/www/html/index.php on line 2
+[Wed Jun 08 18:35:24.266340 2022] [php7:warn] [pid 22] [client 172.19.0.1:65116] PHP Warning:  require(html/screen_one.html): failed to open stream: No such file or directory in /var/www/html/index.php on line 3
+[Wed Jun 08 18:35:24.267142 2022] [php7:error] [pid 22] [client 172.19.0.1:65116] PHP Fatal error:  require(): Failed opening required 'html/screen_one.html' (include_path='.:/usr/local/lib/php') in /var/www/html/index.php on line 3
+[Wed Jun 08 18:35:24.637421 2022] [php7:warn] [pid 22] [client 172.19.0.1:65116] PHP Warning:  require(html/screen_one.html): failed to open stream: No such file or directory in /var/www/html/index.php on line 3
+[Wed Jun 08 18:35:24.638765 2022] [php7:error] [pid 22] [client 172.19.0.1:65116] PHP Fatal error:  require(): Failed opening required 'html/screen_one.html' (include_path='.:/usr/local/lib/php') in /var/www/html/index.php on line 3
+[Thu Jun 09 07:08:11.418000 2022] [mpm_prefork:notice] [pid 1] AH00170: caught SIGWINCH, shutting down gracefully
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.19.0.4. Set the 'ServerName' directive globally to suppress this message
+[Sat Jun 11 16:32:27.500338 2022] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.53 (Debian) PHP/7.4.29 configured -- resuming normal operations
+[Sat Jun 11 16:32:27.501670 2022] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+[Sat Jun 11 17:02:22.920533 2022] [core:error] [pid 20] (2)No such file or directory: [client 172.19.0.1:61240] AH00132: file permissions deny server access: /var/www/html/app/js/screen_one.js, referer: http://localhost/
+[Sat Jun 11 17:03:18.940368 2022] [core:error] [pid 21] (2)No such file or directory: [client 172.19.0.1:61244] AH00132: file permissions deny server access: /var/www/html/app/js/screen_one.js, referer: http://localhost/
+[Sat Jun 11 17:05:30.796778 2022] [core:error] [pid 19] (2)No such file or directory: [client 172.19.0.1:61250] AH00132: file permissions deny server access: /var/www/html/app/js/screen_one.js, referer: http://localhost/
+[Sat Jun 11 17:06:10.437145 2022] [core:error] [pid 20] (2)No such file or directory: [client 172.19.0.1:61254] AH00132: file permissions deny server access: /var/www/html/app/js/screen_one.js, referer: http://localhost/
+[Sat Jun 11 17:06:14.348859 2022] [core:error] [pid 23] (2)No such file or directory: [client 172.19.0.1:61256] AH00132: file permissions deny server access: /var/www/html/app/js/screen_one.js, referer: http://localhost/
+[Sat Jun 11 17:08:47.477886 2022] [mpm_prefork:notice] [pid 1] AH00170: caught SIGWINCH, shutting down gracefully
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.19.0.4. Set the 'ServerName' directive globally to suppress this message
+[Sat Jun 11 17:08:53.681271 2022] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.53 (Debian) PHP/7.4.29 configured -- resuming normal operations
+[Sat Jun 11 17:08:53.682102 2022] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+[Sun Jun 12 11:24:18.215839 2022] [mpm_prefork:notice] [pid 1] AH00170: caught SIGWINCH, shutting down gracefully
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.18.0.3. Set the 'ServerName' directive globally to suppress this message
+[Sun Jun 12 11:24:28.871051 2022] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.53 (Debian) PHP/7.4.29 configured -- resuming normal operations
+[Sun Jun 12 11:24:28.872309 2022] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'

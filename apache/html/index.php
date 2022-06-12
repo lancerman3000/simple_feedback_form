@@ -1,3 +1,3 @@
 <?php
-
-echo' скоро всё будет';
+require('design/html/_header.html');
+require('design/html/screen_one.html');
